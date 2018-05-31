@@ -77,18 +77,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="40dp"
         android:onClick="addData"
         android:text="Add Contact"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phoneView" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/viewButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="75dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:onClick="viewData"
         android:text="View Contacts"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="406dp" />
+        app:layout_constraintStart_toEndOf="@+id/contactButton"
+        app:layout_constraintTop_toBottomOf="@+id/editPhoneText" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="6dp"
+        android:onClick="SearchRecord"
+        android:text="Search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactButton" />
 </android.support.constraint.ConstraintLayout>
