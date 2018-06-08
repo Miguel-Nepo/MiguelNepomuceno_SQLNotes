@@ -100,14 +100,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     public void changeView(){
-        if(mMap.getMapType()==GoogleMap.MAP_TYPE_NORMAL){
-            Log.d("MyMapsApp","changeView: changed view to SATELLITE");
+        if(mMap.getMapType()== GoogleMap.MAP_TYPE_NORMAL){
             mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
         }
-        if(mMap.getMapType()==GoogleMap.MAP_TYPE_SATELLITE){
-            Log.d("MyMapsApp","changeView: changed view to NORMAL");
+        else{
             mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
         }
+
     }
 
     public void onSearch(View v){
